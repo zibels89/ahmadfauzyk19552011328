@@ -1,3 +1,4 @@
+import 'package:ahmadfauzyk19552011328/screens/detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -76,6 +77,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
             onPressed: () {
               debugPrint('Yes, Clicked');
               Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(
+                    design: 'Material',
+                  ),
+                ),
+              );
             },
           ),
         ],
@@ -103,6 +112,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
             onPressed: () {
               debugPrint('Yes, Clicked');
               Navigator.pop(context);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailScreen(
+                    design: 'Cupertino',
+                  ),
+                ),
+              );
             },
           ),
         ],
